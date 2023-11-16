@@ -4,7 +4,7 @@ def has_cycle(graph, v, visited, parent):
         if not visited[neighbor]:
             if has_cycle(graph, neighbor, visited, v):
                 return True
-        elif parent != neighbor:
+        elif parent != neighbor and visited[neighbor]:
             return True
     return False
 
