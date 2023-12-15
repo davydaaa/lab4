@@ -1,5 +1,5 @@
 import unittest
-from main import is_cyclic
+from src.main import is_cyclic
 
 class TestCycleDetection(unittest.TestCase):
 
